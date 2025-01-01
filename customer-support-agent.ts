@@ -5,12 +5,12 @@ import { readFileSync } from 'fs';
 // Load environment variables (AWS credentials, etc.)
 config();
 
-// Load a product catalog (optional for more advanced responses)
+// Load a product catalog (optional)
 const productCatalog = JSON.parse(readFileSync('productCatalog.json', 'utf8'));
 
 // Initialize AWS Bedrock Client
 const client = new BedrockClient({
-  region: 'us-east-1', // Example region
+  region: 'us-east-1', // Specify region
   credentials: {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
@@ -23,7 +23,7 @@ async function handleCustomerInquiry(inquiry: string): Promise<string> {
   const inputText = `Customer Inquiry: ${inquiry}\nResponse:`;
 
   const params = {
-    modelId: 'amazon.titan-text-1.0',  // Example model (change to your specific model)
+    modelId: 'amazon.titan-text-1.0',  // (Can change to your specific model)
     body: JSON.stringify({ prompt: inputText, maxTokens: 150, temperature: 0.7 })
   };
 
