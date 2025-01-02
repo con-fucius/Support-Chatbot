@@ -90,23 +90,6 @@ node <filename>.js
 
 ---
 
-## Sample Output
-```plaintext
-Customer Query: Can you tell me about the latest iPhone?
-AI Response: Here is the information about iPhone 15: The latest smartphone from Apple with cutting-edge technology. It costs $999.
-
-Customer Query: What are the shipping charges for my order?
-AI Response: We offer free shipping on orders over $50. Estimated delivery is 3-5 business days.
-
-Customer Query: I need help with my recent order.
-AI Response: Sorry, I couldn't understand your query.
-
-Customer Query: Do you have any discounts on laptops?
-AI Response: Sorry, I couldn't find any product matching your query.
-```
-
----
-
 ## Security Considerations
 - **Environment Variables**: Use `.env` to securely store AWS credentials.
 - **Error Handling**: Includes error-catching mechanisms for Bedrock interactions.
