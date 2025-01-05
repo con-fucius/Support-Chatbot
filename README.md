@@ -38,19 +38,6 @@ This project demonstrates the use of AWS Bedrock to create an AI-powered custome
 4. Product Catalog
    Create a `productCatalog.json` file in the root directory containing your product data, e.g.:
    ```json
-   [
-       {
-           "name": "iPhone 15",
-           "description": "The latest smartphone from Apple with cutting-edge technology.",
-           "price": 999
-       },
-       {
-           "name": "MacBook Pro",
-           "description": "A high-performance laptop for professionals.",
-           "price": 1999
-       }
-   ]
-   ```
 
 ---
 
@@ -103,6 +90,3 @@ node <filename>.js
 3. Add multi-language support for international customers.
 
 --- 
-
-## License
-This project is licensed under the [MIT License](LICENSE).
